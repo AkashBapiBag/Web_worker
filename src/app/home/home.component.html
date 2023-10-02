@@ -1,0 +1,24 @@
+<div class="center">
+  <h2 style="color: white">Angular Web Worker Example</h2>
+  <mat-card class="example-card">
+    <mat-card-header>
+      <mat-card-subtitle>Add Number</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <p>{{ number }}</p>
+      <mat-divider></mat-divider>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button (click)="addOne()">+1</button>
+      <button mat-raised-button color="warn" (click)="sumOfPrimeNumbers()">
+        +100k
+      </button>
+      <button mat-raised-button color="primary" (click)="sumOfPrimeNumbersWorker()">
+        +100k using worker
+      </button>
+    </mat-card-actions>
+  </mat-card>
+  <div class="container">
+    <div [style.transform]="sliderTranslate" class="slider"></div>
+  </div>
+</div>

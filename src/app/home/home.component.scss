@@ -1,0 +1,22 @@
+:host {
+  display: flex;
+  height: 90%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: #3186C7;
+}
+
+.center {
+  .container {
+    display: flex;
+    height: 20px;
+    margin: 20px 0;
+    .slider {
+      height: 20px;
+      width: 20px;
+      border-radius: 50%;
+      background-color: #efd538;
+    }
+  }
+}
